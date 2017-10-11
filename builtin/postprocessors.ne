@@ -30,3 +30,11 @@ delimited[el, delim] -> $el ($delim $el {% nth(1) %}):* {%
         return [d[0]].concat(d[1]);
     }
 %}
+
+# The nuller builtin
+
+@{%
+function nuller() {
+	return null;
+}
+%}
